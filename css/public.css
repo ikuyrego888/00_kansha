@@ -1,0 +1,683 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 72px;
+    overflow: hidden;
+}
+
+/* ヘッダー設定 */
+header {
+    background-color: #ca885b;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+/* ヘッダーアイコンの設定 */
+#iconBar {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#publicIcon {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+#myMessageBtn {
+    position: fixed;
+    top: 64px;
+    right: 40px;
+    width: 128px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: rgb(48, 62, 82);
+    background-color: #a0a5a7;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 32px;
+}
+
+#sortSelect {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    width: 128px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#iconLine {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ca885b;
+}
+
+#explanation {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #C55A11;
+    text-align: center;
+}
+
+#explanation_01 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#explanation_02 {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#explanation_03 {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #919597;
+}
+
+/* トグルボタン設定 */
+/* .toggle-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.toggle-button.active {
+    background-color: #f44336;
+}
+
+#toggleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    toggle-root: darkmode;
+  }
+  
+  .toggleButton {
+    width: 46px;
+    height: 24px;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    background-color: #BCBDBD;
+    cursor: pointer;
+    toggle-trigger: darkmode;
+  }
+  
+  .toggleButton::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    left: 1px;
+    top: 1px;
+    background: #FFFFFF;
+    border: 1px solid #BCBDBD;
+    transition: all 0.1s ease 0s;
+  }
+  
+  .toggleLabel {
+    color: #1E2121;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  
+  #toggleContainer:toggle(darkmode) {
+    background-color: #1E2121;
+  }
+  
+  .toggleButton:toggle(darkmode) {
+    background-color: #55C500;
+  }
+  
+  .toggleButton:toggle(darkmode)::after {
+    border-color: #55C500;
+    transform: translateX(100%);
+  }
+  
+  .toggleLabel:toggle(darkmode) {
+    color: #FFFFFF;
+  } */
+
+/* ログアウトの設定 */
+
+#logoutIcon {
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+#logout {
+    text-decoration: none;
+    color: white;
+}
+
+#logoutMenu {
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+/* メッセージフィールドの設定 */
+#messageField {
+    width: 80%;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#messageContainer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* メッセージ送信者ステータスの設定 */
+#writersInfo {
+    font-size: 16px;
+    font-weight: bold;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#slash {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#indateFormat {
+    font-weight: normal;
+    font-size: 12.8px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#messageCard {
+    border: 1px solid #eae8e8;
+    width: 440px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 34px;
+    position: relative;
+}
+
+#message {
+    font-size: 16px;
+    min-height: 60px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.messageTag {
+    font-size: 12px;
+    color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#categoryTag {
+    width: 80px;
+    background-color: #ca885b;
+    left: 12px;
+}
+
+#anniversaryTag {
+    width: 120px;
+    background-color: #c9ab97;
+    /* background-color: rgb(48, 62, 82); */
+    left: 100px;
+}
+
+#myMessageTag {
+    width: 50px;
+    background-color: rgb(48, 62, 82);
+    left: 228px;
+}
+
+.iineContainer {
+    position: absolute;
+    bottom: 0;
+    right: 108px;
+}
+
+.iineBtn {
+    width: 30px;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+
+.iineText {
+    position: absolute;
+    line-height: 30px;
+    width: 120px;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #919597;
+}
+
+.iinePostText {
+    position: absolute;
+    line-height: 30px;
+    width: 120px;
+    margin-left: 4px;
+    font-size: 12px;
+    color: #C55A11;
+}
+
+.iineTextBrown {
+    color: #C55A11;
+}
+
+/* 表示できるメッセージが1件もない場合 */
+#noMessage {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* 新規メッセージ作成ボタン */
+#writeButton {
+    width: 56px;
+    right: 22%;
+    bottom: 60px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+}
+
+#expressLink {
+    text-decoration: none;
+    font-size: 0;
+}
+
+#writeBtnIcon {
+    width: 100%;
+    background-color: #C55A11;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+#memoModal {
+    display: none;
+    position: absolute;
+    top: -18px;
+    right: -132px;
+    width: 120px;
+    padding: 3px;
+    border-radius: 10px;
+    background: rgb(103, 103, 103);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+#memoModal::before{
+    /* 以下、吹き出し用の三角形を作る */
+    content: "";
+    border: 8px solid transparent;
+    border-top: 16px solid rgb(103, 103, 103);
+    position: absolute;
+    /* 吹き出し三角形の位置を揃える */
+    bottom: -12px;
+    left: -10px;
+    /* 吹き出し三角形を回転させる */
+    transform: rotate(54deg);
+}
+
+/* ハンバーガーメニューの設定 */
+#humbergerMenuContainer {
+    position: relative;
+    position: fixed;
+    height: 60px;
+    width: 68px;
+    background-color: #ca885b;
+    cursor: pointer;
+}
+
+#humbergerMenuContainer:hover {
+    opacity: 0.7;
+}
+
+#humbergerMenu {
+    position: absolute;
+    height: 32px;
+    width: 28px;
+    box-sizing: border-box;
+    transform: translateY(60%);
+    left: 5px;
+}
+
+#humbergerMenu div {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#humbergerMenu div:nth-of-type(1) {
+    /* bottom: 20px; */
+    top: 0;/
+}
+
+#humbergerMenu div:nth-of-type(2) {
+    /* bottom: 10px; */
+    top: 10px;
+}
+
+#humbergerMenu div:nth-of-type(3) {
+    /* bottom: 0; */
+    top: 20px;
+}
+
+/* #searchText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(210%);
+    left: 21px;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+} */
+
+/* モーダル時の背景設定 */
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+/* サイドメニューの設定 */
+#sidemenu {
+    width: 400px;
+    height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgb(223, 217, 217);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    z-index: 16;
+    transition: left 0.4s ease;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+legend {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #b98b3b;
+}
+
+fieldset > label {
+    font-size: 12.8px;
+    margin-right: 4%;
+}
+
+#textKey {
+    width: 98%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(128, 125, 125);
+}
+
+#andSearch {
+    font-size: 11px;
+}
+
+#textKey {
+    height: 24px;
+}
+
+#searchButton {
+    width: 36%;
+    height: 28px;
+    font-size: 14px;
+    background-color: #C55A11;
+    background-color: #2589d0;
+    background-color: rgb(48, 62, 82);
+    color: white;
+    border-radius: 10px;
+    border: 1.2px solid rgb(128, 125, 125);
+    border: none;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    opacity: 0.7;
+}
+
+/* フッター設定 */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #bcc1c3;
+    width: 100%;
+    height: 60px;
+    z-index: 12;
+}
+
+#footerIconContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.footerIcon {
+    width: 60px;
+    cursor: pointer;
+}
+
+#mypageIcon {
+    position: relative;
+}
+
+#clickHere {
+    display: none;
+    font-size: 14px;
+    color: rgb(230, 72, 120);
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+
+    #headerTitle {
+        font-size: 18px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    #logoutIcon {
+        width: 36px;
+    }
+
+    #logoutMenu {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    #myMessageBtn {
+        top: 72px;
+        right: 10px;
+        width: 108px;
+        height: 28px;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    #sortSelect {
+        top: 104px;
+        right: 10px;
+        width: 108px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    #explanation {
+        padding-top: 60px;
+    }
+
+    #explanation_02 {
+        font-size: 13px;
+    }
+
+    #explanation_03 {
+        font-size: 12px;
+    }
+
+    #messageContainer {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #messageField {
+        width: 90%;
+        max-height: 360px;
+    }
+
+    #writersInfo {
+        font-size: 14px;
+        width: 320px;
+    }
+
+    #messageCard {
+        width: 284px;
+        padding: 12px;
+        padding-bottom: 66px;
+    }
+
+    .messageTag {
+        font-size: 12px;
+        bottom: 28px;
+        margin-bottom: 5px;
+    }
+
+    .iineContainer{
+        right: 88px;
+    }
+
+    #noMessage {
+        font-size: 16px;
+    }
+
+    /* サイドメニューの設定 */
+    #sidemenu {
+        width: 324px;
+        height: 460px;
+    }
+
+    .categoryChk, .ageChk, .marriageChk {
+        margin-right: 0;
+    }
+
+    fieldset {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    fieldset > label {
+        margin-right: 4px;
+    }
+
+    #textKey {
+        width: 96%;
+    }
+
+    #writeButton {
+        right: 5%;
+    }
+
+    #clickHere {
+        font-size: 12px;
+        bottom: 20px;
+        right: 36px;
+    }
+
+    #clickHere #arrow {
+        display: none;
+    }
+
+}

@@ -1,0 +1,636 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 72px;
+    overflow: hidden;
+}
+
+/* ヘッダー設定 */
+header {
+    background-color: #ca885b;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+/* ヘッダーアイコンの設定 */
+#iconBar {
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#messageIcon {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+#logoutIcon {
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+#iconLine {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ca885b;
+}
+
+/* ログアウトの設定 */
+#logout, #return {
+    text-decoration: none;
+    color: white;
+}
+
+#logoutMenu {
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+#myMessageBtn, #countChkBtn {
+    position: fixed;
+    top: 64px;
+    right: 40px;
+    width: 128px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: rgb(48, 62, 82);
+    background-color: #a0a5a7;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 32px;
+}
+
+/* 戻るボタンの設定 */
+#return {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+/* メッセージフィールドの設定 */
+#messageField {
+    width: 80%;
+    margin: 0 auto;
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#messageContainer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* 送信日時・パートナー名の設定 */
+#dateTime, #dateTime2 {
+    font-size: 14px;
+    width:500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 画像の設定 */
+#imageDisplay {
+    margin-bottom: 10px;
+}
+
+#image {
+    max-width: 320px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+#messageCard {
+    border: 1px solid #eae8e8;
+    width: 440px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 34px;
+    position: relative;
+}
+
+#message {
+    font-size: 16px;
+    min-height: 80px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+#category {
+    font-size: 12px;
+    color: white;
+    background-color: #ca885b;
+    opacity: 0.9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 108px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+/* 未読メッセージの設定 */
+#newMessageContainer {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    border: 1px solid #eae8e8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 20px;
+}
+
+#newMessageIcon {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+#newMessageImage {
+    position: relative;
+}
+
+#countDisplay {
+    background-color: #C55A11;
+    opacity: 0.8;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    right: 50%;
+    top: 5%;
+    transform: translateX(170%);
+}
+
+#partnerName, #notice, #noticeEnglish {
+    text-align: center;
+}
+
+#sankara {
+    font-size: 14px;
+}
+
+#notice {
+    color: #C55A11;
+    font-size: 20px;
+}
+
+#noticeEnglish {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#openButton {
+    text-decoration: none;
+    background-color: #ca885b;
+    color: white;
+    font-size: 16px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#openButton:hover {
+    opacity: 0.8;
+}
+
+/* 表示できるメッセージが1件もない場合 */
+#noMessage {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#twentyFour {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 12px;
+    color: #919597;
+}
+
+/* 新規メッセージ作成ボタン */
+#writeButton {
+    width: 56px;
+    right: 22%;
+    bottom: 60px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+}
+
+#expressLink {
+    text-decoration: none;
+    font-size: 0;
+}
+
+#writeBtnIcon {
+    width: 100%;
+    background-color: #C55A11;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 2px;
+}
+
+#memoModal {
+    display: none;
+    position: absolute;
+    top: -18px;
+    right: -132px;
+    width: 120px;
+    padding: 3px;
+    border-radius: 10px;
+    background: rgb(103, 103, 103);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+#memoModal::before{
+    /* 以下、吹き出し用の三角形を作る */
+    content: "";
+    border: 8px solid transparent;
+    border-top: 16px solid rgb(103, 103, 103);
+    position: absolute;
+    /* 吹き出し三角形の位置を揃える */
+    bottom: -12px;
+    left: -10px;
+    /* 吹き出し三角形を回転させる */
+    transform: rotate(54deg);
+}
+
+/* モーダル時の背景設定 */
+#modalBackground, #modalBackground_ {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+#partnerNotRegisteredDialog, #helloDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 36%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#helloDialog {
+    width: 60%;
+}
+
+#partnerNotRegisteredDialog p, #helloDialog p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#partnerNotRegisteredDialog button {
+    line-height: 20px;
+    width: 40%;
+    height: 32px;
+    padding: 4px 12px;
+    margin-right: 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#explanation_01 {
+    color: #C55A11;
+}
+
+#explanation_02 {
+    font-size: 14px;
+    color: #919597;
+}
+
+/* 送信中のモーダル設定 */
+#modalBackgroundWhite, #modalBackgroundWhite_ {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.9;
+    z-index: 14;
+}
+
+#modalBackgroundWhite_ {
+    opacity: 1.0;
+}
+
+#sendIcon {
+    display: none;
+    width: 80px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    opacity: 1;
+    z-index: 18;
+}
+
+#nowSending {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 18;
+}
+
+#sendCompletely, #publicCompletely, #stopPublish {
+    display: none;
+    position: absolute;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 18;
+}
+
+#sendCompletely button, #publicCompletely button, #stopPublish button {
+    line-height: 20px;
+    width: 160px;
+    height: 32px;
+    padding: 4px 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#sendCompletely button:hover, #publicCompletely button:hover, #stopPublish button:hover {
+    background-color: #a0a5a7;
+    color: white;
+}
+
+#unopenedIcon, #openedIcon {
+    display: none;
+    width: 80px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 18;
+}
+
+#countTableContainer {
+    background-color: white;
+    display: none;
+    width: 40%;
+    max-height: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+
+#countTable {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#countTable th {
+    background-color: #d29d42;
+    background-color: #dcc296;
+    background-color: #ca885b;
+    background-color: #a0a5a7;
+
+    font-weight: normal;
+    color: white;
+    border: 1px solid #ddd;
+    height: 32px;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+}
+
+#countTable th:nth-child(1), #countTable td:nth-child(1) {
+    border-left: none;
+    width: 40%;
+}
+
+#countTable th:nth-child(2),#countTable td:nth-child(2) {
+    border-right: none;
+    width: 60%;
+}
+
+#countTable td {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 24px;
+    box-sizing: content-box;
+}
+
+/* フッター設定 */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #bcc1c3;
+    width: 100%;
+    height: 60px;
+    z-index: 12;
+}
+
+#footerIconContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.footerIcon {
+    width: 60px;
+    cursor: pointer;
+}
+
+#mypageIcon {
+    position: relative;
+}
+
+#clickHere {
+    display: none;
+    font-size: 14px;
+    color: rgb(230, 72, 120);
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 640px) {
+
+    #headerTitle {
+        font-size: 18px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    #logoutIcon {
+        width: 36px;
+    }
+
+    #logoutMenu {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    #newMessageContainer {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    #myMessageBtn, #countChkBtn {
+        top: 72px;
+        right: 10px;
+        width: 108px;
+        height: 28px;
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    #messageContainer {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #dateTime, #dateTime2 {
+        width: 360px;
+    }
+
+    #messageField {
+        width: 90%;
+        max-height: 360px;
+    }
+
+    #messageCard {
+        width: 280px;
+    }
+
+    #image {
+        max-width: 240px;
+    }
+
+    #dateTime2 {
+        width:320px;
+        font-size: 14px;
+    }
+
+    #noMessage {
+        font-size: 16px;
+    }
+
+    #writeButton {
+        right: 5%;
+    }
+
+    #countTableContainer {
+        width: 80%;
+    }
+
+    /* ダイアログ設定 */
+    #partnerNotRegisteredDialog {
+        width: 80%;
+    }
+
+    #helloDialog {
+        width: 84%;
+    }
+
+    #clickHere {
+        font-size: 12px;
+        bottom: 20px;
+        right: 36px;
+    }
+
+    #clickHere #arrow {
+        display: none;
+    }
+
+    #stopPublish {
+        width: 80%;
+    }
+
+}

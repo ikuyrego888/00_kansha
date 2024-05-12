@@ -1,0 +1,469 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 72px;
+    overflow: hidden;
+}
+
+/* ヘッダー設定 */
+header {
+    background-color: #d69c5e;
+    background-color: #C55A11;
+    background-color: #ca885b;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    /* z-index: 8; */
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+/* ヘッダーアイコンの設定 */
+#iconBar {
+    background-color: white;
+}
+
+#messageIcon, #writeIcon, #publicIcon, #userIcon {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+#minnanoKansha {
+    position: fixed;
+    top: 88px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    margin: 0 auto;
+}
+
+#iconLine {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ca885b;
+}
+
+#form {
+    width: 80%;
+    max-height: 400px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ログアウトの設定 */
+#logoutIcon {
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+#logout {
+    text-decoration: none;
+    color: white;
+}
+
+#logoutMenu {
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+/* 入力項目の設定 */
+.formItem {
+    /* width: 500px; */
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+#photoIamge {
+    display: flex;
+    align-items: center;
+}
+
+#imgIcon {
+    width: 24px;
+    margin-left: 8px;
+}
+
+/* 入力欄に段落を入れる設定 */
+#shift {
+    margin-left: 10px;
+}
+
+/* メッセージ入力欄 */
+#message, #publishedMessage {
+    width: 300px;
+    height: 100px;
+    font-size: 14px;
+    font-family: Arial;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+/* メッセージ入力欄 */
+#category, #publicChk, #publishedCategory {
+    width: 200px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+/* ファイル選択ボタン */
+#upfileButton {
+    height: 28px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(118, 118, 118);
+    margin-left: 20%;
+}
+
+#fileChk {
+    font-size: 12px;
+}
+
+#previewImageSet {
+    margin-top: 10px;
+    margin-left: 20%;
+}
+
+#previewImage {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+/* モーダル時の背景設定 */
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#confirmDialog {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 40%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#confirmDialog p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#confirmDialog button {
+    line-height: 20px;
+    width: 40%;
+    height: 32px;
+    padding: 4px 12px;
+    margin-right: 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmDialog button:last-child {
+    margin-right: 0;
+}
+
+#confirmBtn:hover, #cancelBtn:hover {
+    background-color: #a0a5a7;
+    color: white;
+}
+
+/* 送信中のモーダル設定 */
+#modalBackgroundWhite {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.9;
+    z-index: 6;
+}
+
+#sendIcon {
+    display: none;
+    width: 80px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    opacity: 1;
+    z-index: 8;
+}
+
+#nowSending {
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 8;
+}
+
+#sendCompletely {
+    display: none;
+    position: absolute;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 18;
+}
+
+#sendCompletely button {
+    line-height: 20px;
+    width: 160px;
+    height: 32px;
+    padding: 4px 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#sendCompletely button:hover {
+    background-color: #a0a5a7;
+    color: white;
+}
+
+/* ３つのActButton設定 */
+#ActButton {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#return, #saveButton, #sendButton {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    /* margin-top: 4%;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#return {
+    background-color: #b4b9bb;
+}
+
+#saveButton {
+    background-color: #ca885b;
+}
+
+#sendButton {
+    background-color: #C55A11;
+}
+
+#return:hover, #saveButton:hover, #sendButton:hover {
+    opacity: 0.8;
+}
+
+/* フッター設定 */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #bcc1c3;
+    width: 100%;
+    height: 60px;
+    /* z-index: 8; */
+}
+
+#footerIconContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.footerIcon {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* publicChk.phpの設定 */
+#explanation {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #C55A11;
+    text-align: center;
+}
+
+#attention {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: red;
+}
+
+#attention table td {
+    line-height: 1;
+}
+
+#publishActButton {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+#stopPublish, #publish {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#stopPublish {
+    background-color: #b4b9bb;
+}
+
+#publish {
+    background-color: #C55A11;
+}
+
+#stopPublish:hover, #publish:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    #headerTitle {
+        font-size: 18px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    #logoutIcon {
+        width: 36px;
+    }
+
+    #logoutMenu {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    #writeIcon {
+        width: 72px;
+    }
+
+    #form {
+        width: 92%;
+        max-height: 480px;
+    }
+
+    .formItem {
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-left: 2%;
+    }
+
+    #message, #publishedMessage {
+        height: 80px;
+        margin-left: 2%;
+    }
+
+    #category, #publicChk, #upfileButton, #previewImageSet {
+        margin-left: 2%;
+    }
+
+    #previewImageSet {
+        margin-top: 5px;
+    }
+
+    #previewImage {
+        max-width: 72px;
+    }
+    
+    #confirmDialog {
+        width: 80%;
+    }
+
+    #ActButton {
+        margin-top: 20px;
+    }
+    /* publicChk.phpの設定 */
+    #explanation {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #attention {
+        font-size: 9px;
+    }
+
+    #publishActButton {
+        margin-top: 32px;
+    }
+
+}

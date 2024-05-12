@@ -1,0 +1,670 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 72px;
+    overflow: hidden;
+}
+
+/* ヘッダー設定 */
+header {
+    background-color: #ca885b;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+/* ヘッダーアイコンの設定 */
+#iconBar {
+    background-color: white;
+}
+
+#userIcon {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+#iconLine {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ca885b;
+}
+
+#mypageMenuContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 36px;
+    overflow-x: hidden;
+}
+
+.mypageMenu {
+    text-align: center;
+    font-size: 18px;
+}
+
+.mypageMenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuLine {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #bcc1c3;
+}
+
+#partnerInfoMenu {
+    position: relative;
+}
+
+#new, #clickHere, #requestStatus {
+    font-size: 14px;
+    color: rgb(42, 185, 185);
+    position: absolute;
+    top: -50%;
+    margin-left: 1%;
+}
+
+#clickHere {
+    color: rgb(230, 72, 120);
+}
+
+#requestStatus {
+    color: rgb(230, 72, 120);
+    font-size: 11px;
+}
+
+/* ログアウトの設定 */
+#logoutIcon {
+    width: 44px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+
+#logout, #return {
+    text-decoration: none;
+    color: white;
+}
+
+#logoutMenu {
+    cursor: pointer;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+/* 戻るボタンの設定 */
+#return {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+#updateBtn {
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    right: 5%;
+    top: 110px;
+    z-index: 2;
+}
+
+#update {
+    text-decoration: none;
+    /* background-color: #C55A11;; */
+    /* border-radius: 10px; */
+    /* border: 1.2px solid rgb(195, 191, 191); */
+    /* background-color: #efefef; */
+    /* padding: 2% 4% 2% 4%; */
+    color: #2589d0;
+    color: #00704A;
+    width: 100px;
+}
+
+/* フッター設定 */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #bcc1c3;
+    width: 100%;
+    height: 60px;
+}
+
+#footerIconContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.footerIcon {
+    width: 60px;
+    cursor: pointer;
+}
+
+/* ユーザー情報の設定 */
+#form {
+    width: 72%;
+    margin: 0 auto;
+    padding-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    padding-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#form td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 40px;
+}
+
+#form td:nth-child(1) {
+    width: 30%;
+    border-left: none;
+    background-color: #dcc296;
+}
+
+#form td:nth-child(2) {
+    width: 70%;
+    border-right: none;
+}
+
+/* 感謝BOOKに必要な情報 */
+#form td#asterisk {
+    font-size: 12px;
+    height: 24px;
+    background-color: white;
+    border-right: none;
+}
+
+/* 必須ラベルの設定 */
+.must, .option {
+    background-color: #00704A;
+    /* background-color: rgb(48, 62, 82); */
+    color: white;
+    font-size: 11px;
+    padding: 2% 4% 2% 4%;
+    margin-left: 8%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.option {
+    background-color: #ca885b;
+}
+
+.userInfo {
+    width: 80%;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.userInfoUpdate, .updatePassword {
+    width: 80%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#year, #month, #day {
+    width: 15%;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#month, #day {
+    width: 10%;
+}
+
+#ymd {
+    font-size: 16px;
+}
+
+#occupation, #sex {
+    width: 40%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+.passwordItem {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* ユーザー情報の更新 */
+#lastName, #firstName {
+    width: 30%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#lastName {
+    margin-right: 5%;
+}
+
+.postCode {
+    width: 60px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+.address {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.explain {
+    font-size: 12px;
+    color: #919597;
+}
+
+#prefecture {
+    width: 160px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+/* 戻るボタン・ユーザー登録ボタン */
+#btnContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#returnBtn, #register {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+    width: 32%;
+    height: 32px;
+    border-radius: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: #efefef;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+}
+
+#returnBtn {
+    width: 20%;
+    margin-right: 20px;
+}
+
+#returnBtn:hover {
+    background-color: #919597;
+    opacity: 0.9;
+    color: white;
+}
+
+#register:hover {
+    background-color: #ca885b;
+    color: white;
+}
+
+/* パートナーへのリクエスト申請の設定 */
+#explanation {
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #C55A11;
+    text-align: center;
+}
+
+#explainPartner_1 {
+    font-weight: bold;
+}
+
+#explainPartner_2 {
+    font-size: 16px;
+    color: #6a6d6f;
+}
+
+#partnerLidContainer {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#partnerLidItem {
+    margin-left: -5%;
+}
+
+#partnerLid {
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#explainPartnerLid {
+    width: 100%;
+}
+
+#requestBtn {
+    width: 64%;
+    height: 36px;
+    border-radius: 10px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: #efefef;
+    background-color: #ca885b;
+    color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 36px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#application {
+    text-align: center;
+    font-weight: bold;
+}
+
+#explainApplication {
+    text-align: center;
+}
+
+#requestCancelBtn, #approvalDenyBtn {
+    width: 64%;
+    height: 36px;
+    border-radius: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: #efefef;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 36px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#approvalDenyBtn {
+    width: 40%;
+    margin-top: 10px;
+}
+
+#applyContainer {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#requestTable {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#requestTable td {
+    height: 32px;
+}
+
+#approveContainer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#approveChk {
+    margin-bottom: 10px;
+}
+
+/* モーダル時の背景設定 */
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#confirmDialog, #firstLinkDialog {
+    display: none;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 40%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 11;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#firstLinkDialog {
+    top: 50%;
+    width: 36%;
+}
+
+#confirmDialog p, #firstLinkDialog p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#confirmDialog button, #firstLinkDialog button {
+    line-height: 20px;
+    width: 40%;
+    height: 32px;
+    padding: 4px 12px;
+    margin-right: 20px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#confirmDialog button:last-child {
+    margin-right: 0;
+}
+
+#confirmBtn:hover, #approvalConfirmBtn, #cancelConfirmBtn:hover, #cancelBtn:hover {
+    background-color: #a0a5a7;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+
+    #headerTitle {
+        font-size: 18px;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+
+    #logoutIcon {
+        width: 36px;
+    }
+
+    #logoutMenu {
+        top: 5px;
+        right: 5px;
+        font-size: 14px;
+    }
+
+    .menuLine {
+        width: 80%;
+    }
+
+    #form {
+        width: 90%;
+        font-size: 14px;
+        max-height: 320px;
+        padding-bottom: 40px;
+    }
+
+    .userInfoUpdate, .updatePassword, #year, #month, #day, #ymd, #occupation, #sex, #lastName, #firstName, .postCode, #prefecture {
+        font-size: 14px;
+        height: 28px;
+    }
+
+    #form td {
+        padding: 4px;
+    }
+
+    #form td:nth-child(1) {
+        width: 34%;
+    }
+
+    #form td:nth-child(2) {
+        width: 66%;
+    }
+
+    .must, .option {
+        margin-left: 4%;
+        font-size: 9px;
+    }
+
+    .userInfoUpdate {
+        width: 88%;
+        height: 28px;
+    }
+
+    #year {
+        width: 28%;
+    }
+
+    #month, #day {
+        width: 16%;
+    }
+
+    #occupation {
+        width: 72%;
+    }
+
+    #sex {
+        width: 48%;
+    }
+
+    #form td#asterisk {
+        font-size: 8px;
+        height: 18px;
+    }
+
+    #lastName, #firstName {
+        width: 40%;
+    }
+
+    #lastName {
+        margin-right: 3%;
+    }
+
+    .address, .passwordItem {
+        font-size: 12px;
+    }
+
+    .explain {
+        font-size: 8px;
+    }
+
+    #returnBtn {
+        font-size: 14px;
+        width: 32%;
+    }
+
+    #register {
+        font-size: 14px;
+        width: 44%;
+    }
+
+    #partnerLidContainer {
+        width: 76%;
+    }
+
+    #partnerLid {
+        height: 28px;
+        font-size: 14px;
+    }
+
+    #explainPartner_2 {
+        font-size: 14px;
+    }
+
+    #explain_br::after {
+        content: '\A';
+        white-space: pre;
+    }
+
+    #explainPartnerLid {
+        font-size: 10px;
+    }
+
+    #requestBtn, #requestCancelBtn {
+        width: 80%;
+    }
+
+    #approvalDenyBtn {
+        width: 54%;;
+    }
+
+    #explainApplication {
+        font-size: 12px;
+    }
+
+    #requestTable {
+        width: 100%;
+    }
+
+    /* ダイアログ設定 */
+    #confirmDialog, #firstLinkDialog {
+        width: 80%;
+    }
+
+}

@@ -1,0 +1,257 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ca885b;
+    text-align: center;
+    height: 60px;
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+#appliTitle {
+    margin-top: 50px;
+    text-align: center;
+    font-family: SenobiGothic;
+    font-family: Hannotate SC;
+    font-family: HanziPen SC;
+    color: #C67B2C;
+    color: #b77229;
+    font-size: 36px;
+}
+
+#appliSubtitle {
+    text-align: center;
+    font-family: monospace;
+    font-family: Calibri;
+    font-family: Bradley Hand;
+    /* font-family: monospace; */
+    font-size: 18px;
+    margin-top: 5px;
+    color: #919597;
+}
+
+#logo {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* #registerForm {
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    background-color: #d2a04a;
+    background-color: #b98b3b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#recommend {
+    font-family: SenobiGothic;
+    font-weight: normal;
+    font-size: 1.0rem;
+    height: 24px;
+    line-height: 32px;
+}
+
+#bookmark {
+    font-family: SenobiGothic;
+    height: 40px;
+    line-height: 40px;
+} */
+
+#tab {
+    background-color: #efefef;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#tabItem {
+    width: calc(100%/2);
+    height: 50px; 
+    border-bottom: 3px solid #dcc296;
+    background-color: #d9d9d9;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    float: left;
+    transition: all 0.2s ease;
+}
+
+/* name属性が"tabItemのものに適用" */
+input[name="tabItem"] {
+    display: none;
+}
+
+/* ラジオボタンがcheckedの場合に表示させるため一旦非表示 */
+.tabContainer {
+    display: none;
+    text-align: center;
+}
+
+/* checkedされると表示 */
+#loginTab:checked ~ #loginContainer,
+#registerTab:checked ~ #registerContainer {
+    display: block;
+}
+
+/* checkedされるとタブがハイライトされる */
+#tab input:checked + #tabItem {
+    background-color: #b77229;
+    background-color: #ca885b;
+    color: white;
+}
+
+/* 不要？ */
+#loginContainer, #registerContainer {
+    /* text-align: center; */
+}
+
+/* 不要？ */
+.tabContainer {
+    /* margin: 0 auto; */
+}
+
+#tabItem {
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+#loginPassDiv, #loginDone, #newRegister {
+    margin-top: 5%;
+}
+
+#loginDone, #newRegister {
+    margin-bottom: 5%;
+}
+
+#loginDone, #newRegister {
+    width: 40%;
+    height: 32px;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 16px;
+    border: 1.2px solid rgb(128, 125, 125);
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: #efefef;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#loginDone:hover, #newRegister:hover {
+    background-color: #ca885b;
+    color: white;
+}
+
+#loginIdDiv, #loginPassDiv {
+    text-align: left;
+    margin-left: 15%;
+}
+
+.inputTag {
+    width: 60%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+/* モーダル時の背景設定 */
+#modalBackground, #modalBackground_ {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+#dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 36%;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#dialog p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 640px) {
+
+    #appliTitle {
+        font-size: 32px;
+    }
+
+    #appliSubtitle {
+        font-size: 16px;
+    }
+
+    #appliLogo {
+        width: 88%;
+    }
+
+    #tab {
+        width: 88%;
+    }
+
+    .inputTag {
+        width: 76%;
+    }
+
+    .inputTag::placeholder {
+        font-size: 12px;
+    }
+
+    #loginIdDiv, #loginPassDiv {
+        margin-left: 10%;
+    }
+
+    #loginPassDiv, #loginDone, #newRegister {
+        margin-top: 10%;
+    }
+    
+    #loginDone, #newRegister {
+        width: 64%;
+        margin-bottom: 10%;
+    }
+    
+    #dialog {
+        width: 80%;
+    }
+
+}

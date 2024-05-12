@@ -1,0 +1,269 @@
+/* 新たなフォント体の追加設定 */
+@font-face {
+    font-family: "SenobiGothic";
+    src: url("../fonts/Senobi-Gothic-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ヘッダー設定 */
+header {
+    background-color: #ca885b;
+    text-align: center;
+    height: 60px;
+}
+
+#headerTitle {
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+
+/* 初回登録時の画面設定 */
+#appliTitle {
+    margin-top: 20px;
+    text-align: center;
+    font-family: SenobiGothic;
+    font-family: HanziPen SC;
+    color: #C67B2C;
+    color: #b77229;
+    font-size: 32px;
+}
+
+#appliSubtitle {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: monospace;
+    font-family: Calibri;
+    font-family: Bradley Hand;
+    color: #919597;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#form {
+    width: 72%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 400px;
+    padding-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-bottom: 20px; */
+}
+
+#form td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 40px;
+}
+
+#form td:nth-child(1) {
+    width: 30%;
+    border-left: none;
+    background-color: #dcc296;
+}
+
+#form td:nth-child(2) {
+    width: 70%;
+    border-right: none;
+}
+
+/* 必須ラベルの設定 */
+#must {
+    background-color: #00704A;
+    color: white;
+    font-size: 11px;
+    padding: 2% 4% 2% 4%;
+    margin-left: 8%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.userInfo {
+    width: 80%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#year, #month, #day {
+    width: 15%;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#month, #day {
+    width: 10%;
+}
+
+#ymd {
+    font-size: 16px;
+}
+
+#occupation, #sex {
+    width: 40%;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid rgb(195, 191, 191);
+}
+
+#notes {
+    font-size: 14px;
+    color: #919597;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+/* ユーザー登録ボタン */
+#register {
+    width: 40%;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#register:hover {
+    background-color: #ca885b;
+    color: white;
+}
+
+/* 戻るボタン */
+#return {
+    text-decoration: none;
+    color: black;
+    width: 40%;
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1.2px solid rgb(195, 191, 191);
+    background-color: #efefef;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#return:hover {
+    background-color: #919597;
+    opacity: 0.9;
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    /* 何故か反応せず... */
+    #registerForm, #registerFormAdm {
+        margin-top: 12%;
+        margin-bottom: 0;
+        width: 80%;
+    }
+
+    #recommend {
+        font-size: 0.7rem;
+        height: 12px;
+        line-height: 20px;
+    }
+
+    #bookmark {
+        font-size: 0.8rem;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    #searchPage, #logout, #admButton {
+        width: 28%;
+        font-size: 0.6rem;
+        font-weight: bold;
+        height: 24px;
+    }
+
+    #logout, #admButton {
+        width: 20%;
+    }
+
+    #admButton {
+        right: 24%;
+    }
+
+    #form {
+        width: 90%;
+        font-size: 14px;
+        max-height: 440px;
+        padding-bottom: 10px;
+    }
+
+    .userInfo, #year, #month, #day, #ymd, #occupation, #sex {
+        font-size: 14px;
+        height: 28px;
+    }
+
+    #form td {
+        padding: 4px;
+        height: 48px;
+    }
+
+    #form td:nth-child(1) {
+        width: 34%;
+    }
+
+    #form td:nth-child(2) {
+        width: 66%;
+    }
+
+    #must {
+        margin-left: 4%;
+        font-size: 9px;
+    }
+
+    .userInfoUpdate {
+        width: 88%;
+        height: 28px;
+    }
+
+    #year {
+        width: 28%;
+    }
+
+    #month, #day {
+        width: 16%;
+    }
+
+    #occupation {
+        width: 72%;
+    }
+
+    #sex {
+        width: 48%;
+    }
+
+    #notes {
+        font-size: 12px;
+    }
+
+    #register, #return {
+        width: 60%;
+        margin-top: 18px;
+    }
+ 
+}
